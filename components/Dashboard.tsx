@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 import { motion } from "framer-motion"
 function Dashboard() {
     return (
-        <div className='min-h-screen'>
+        <div className='min-h-screen mx-auto'>
             <motion.h1
                 initial={{
                     x: -500,
@@ -22,8 +22,8 @@ function Dashboard() {
                     delay: 0.15
                 }}
                 className='text-black text-2xl font-bold my-5'>Dashboard</motion.h1>
-            <div className='flex flex-col md:flex-row gap-5 mx-auto'>
-                <div className=''>
+            <div className='flex flex-col md:flex-row gap-5'>
+                <div className='md:min-w-[650px]'>
                     <motion.div
                         initial={{
                             opacity: 0,

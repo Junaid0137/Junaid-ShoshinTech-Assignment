@@ -13,7 +13,7 @@ function Sidebar() {
     return (
         <div className='bg-[#FAFAFA] p-5'>
             <div className='hidden md:inline'>
-                <div className='px-10'>
+                <div className='px-5'>
                     <Logo />
                 </div>
                 <div

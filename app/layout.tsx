@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen flex-col md:flex-row">
           <Sidebar />
-          <div className="flex-1 pt-7 px-5 md:px-10 bg-white overflow-y-auto scrollbar-hide">
+          <div className="flex-1 pt-7 px-5 md:max-w-7xl md:px-10 bg-white overflow-y-auto scrollbar-hide mx-auto">
             {children}
           </div>
         </div>

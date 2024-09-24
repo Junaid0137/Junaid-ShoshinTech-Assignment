@@ -66,7 +66,7 @@ function Announcements({ name, dataType }: { name: string, dataType: string }) {
                 <DatePicker />
             </div>
             {dataType === 'announcement' && (
-                <div className='grid grid-cols-1 space-y-3 mt-5 max-h-56 overflow-y-scroll scrollbar'>
+                <div className='grid grid-cols-1 space-y-3 mt-5 h-60 overflow-y-scroll scrollbar'>
                     {AnnouncementData.map((item, i) => (
                         <Announcement key={i} title={item.title} time={item.time} />
                     ))}
@@ -84,7 +84,7 @@ function Announcements({ name, dataType }: { name: string, dataType: string }) {
                     </div>
                     <div className='mt-5'>
                         <h1>Other</h1>
-                        <div className='grid grid-cols-1 space-y-3 mt-5 max-h-40 overflow-y-scroll scrollbar'>
+                        <div className='grid grid-cols-1 space-y-3 mt-5 max-h-44 overflow-y-scroll scrollbar'>
                             {UpcomingData.Other.map((item, i) => (
                                 <Announcement key={i} title={item.title} time={item.time} />
                             ))}
